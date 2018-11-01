@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PruebaNgStyleComponent } from './components/prueba-ng-style/prueba-ng-style.component';
 import { PruebaNgClassComponent } from './components/prueba-ng-class/prueba-ng-class.component';
+import { ResaltadoDirective } from './directives/resaltado.directive';
 import { PruebaDirectivasPersonalizadasComponent } from './components/prueba-directivas-personalizadas/prueba-directivas-personalizadas.component';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { PruebaDirectivasPersonalizadasComponent } from './components/prueba-dir
     AppComponent,
     PruebaNgStyleComponent,
     PruebaNgClassComponent,
+    ResaltadoDirective,
     PruebaDirectivasPersonalizadasComponent
   ],
   imports: [

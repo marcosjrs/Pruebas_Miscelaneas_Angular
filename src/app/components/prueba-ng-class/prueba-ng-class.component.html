@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">ngClass</h5>
+    <div class="card-text">
+      <div>clases css:</div>
+      <pre>
+        {{ '.claseCSS1 { color:  blue;}
+        .claseCSS2 { color:  gree;}' }}
+      </pre>
+    </div>
+    <hr>
+    <div class="card-text">
+        <div>valores en componente angular:</div>
+        <pre>
+            isClase1Activa:boolean=true;
+            isClase2Activa:boolean=true;
+            miClaseCSS:string = "text-info" ;
+        </pre>
+      </div>
+    <hr>
+
+    <div class="card-text" [class.claseCSS1]="isClase1Activa">[class.claseCSS1]="isClase1Activa" </div>
+    <div class="card-text" [class.claseCSS2]="isClase2Activa">[class.claseCSS2]="isClase2Activa" </div>
+    <div class="card-text" [ngClass]="{'claseCSS2': isClase2Activa}">{{"[ngClass]=\"{'claseCSS2': isClase2Activa}"}} </div>
+    <div class="card-text" [ngClass]="miClaseCSS">[ngClass]="miClaseCSS" </div>
+
+    <div class="mt-3">
+      <div class="input-group-text mr-2" style="display:inline-block">
+        <input type="checkbox" [(ngModel)]="isClase1Activa"> isClase1Activa
+      </div>
+      <div class="input-group-text mr-2" style="display:inline-block">
+        <input type="checkbox" [(ngModel)]="isClase2Activa"> isClase2Activa
+      </div>
+    </div>
+  </div>
+</div>

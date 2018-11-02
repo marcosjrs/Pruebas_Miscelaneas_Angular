@@ -7,6 +7,7 @@ import { PruebaNgStyleComponent } from './components/prueba-ng-style/prueba-ng-s
 import { PruebaNgClassComponent } from './components/prueba-ng-class/prueba-ng-class.component';
 import { ResaltadoDirective } from './directives/resaltado.directive';
 import { PruebaDirectivasPersonalizadasComponent } from './components/prueba-directivas-personalizadas/prueba-directivas-personalizadas.component';
+import { PruebaNgSwitchComponent } from './components/prueba-ng-switch/prueba-ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PruebaDirectivasPersonalizadasComponent } from './components/prueba-dir
     PruebaNgStyleComponent,
     PruebaNgClassComponent,
     ResaltadoDirective,
-    PruebaDirectivasPersonalizadasComponent
+    PruebaDirectivasPersonalizadasComponent,
+    PruebaNgSwitchComponent
   ],
   imports: [
     BrowserModule,

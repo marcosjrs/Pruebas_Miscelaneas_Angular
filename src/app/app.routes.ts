@@ -1,12 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { UsuarioComponent } from './components/usuario/usuario.component';
-import { NuevoUsuarioComponent } from './components/usuario/nuevo-usuario.component';
-import { EditarUsuarioComponent } from './components/usuario/editar-usuario.component';
-import { DetalleUsuarioComponent } from './components/usuario/detalle-usuario.component';
+import { ContainerPruebasDirectivasComponent } from './components/pruebas-directivas/container-pruebas-directivas.component';
+import { UsuarioComponent } from './components/pruebas-router/usuario.component';
+import { NuevoUsuarioComponent } from './components/pruebas-router/nuevo-usuario.component';
+import { EditarUsuarioComponent } from './components/pruebas-router/editar-usuario.component';
+import { DetalleUsuarioComponent } from './components/pruebas-router/detalle-usuario.component';
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent },
+    { path: 'home', component: ContainerPruebasDirectivasComponent },
 
     {
         path: 'usuario/:idUsuario',

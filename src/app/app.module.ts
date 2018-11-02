@@ -13,6 +13,8 @@ import { appRouting } from './app.routes';
 import { NuevoUsuarioComponent } from './components/usuario/nuevo-usuario.component';
 import { EditarUsuarioComponent } from './components/usuario/editar-usuario.component';
 import { DetalleUsuarioComponent } from './components/usuario/detalle-usuario.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { DetalleUsuarioComponent } from './components/usuario/detalle-usuario.co
     HomeComponent,
     NuevoUsuarioComponent,
     EditarUsuarioComponent,
-    DetalleUsuarioComponent
+    DetalleUsuarioComponent,
+    NavbarComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,

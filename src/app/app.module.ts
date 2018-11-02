@@ -10,6 +10,9 @@ import { PruebaDirectivasPersonalizadasComponent } from './components/prueba-dir
 import { PruebaNgSwitchComponent } from './components/prueba-ng-switch/prueba-ng-switch.component';
 import { HomeComponent } from './components/home/home.component';
 import { appRouting } from './app.routes';
+import { NuevoUsuarioComponent } from './components/usuario/nuevo-usuario.component';
+import { EditarUsuarioComponent } from './components/usuario/editar-usuario.component';
+import { DetalleUsuarioComponent } from './components/usuario/detalle-usuario.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { appRouting } from './app.routes';
     ResaltadoDirective,
     PruebaDirectivasPersonalizadasComponent,
     PruebaNgSwitchComponent,
-    HomeComponent
+    HomeComponent,
+    NuevoUsuarioComponent,
+    EditarUsuarioComponent,
+    DetalleUsuarioComponent
   ],
   imports: [
     BrowserModule,

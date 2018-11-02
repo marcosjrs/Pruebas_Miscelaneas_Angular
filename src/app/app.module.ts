@@ -8,6 +8,8 @@ import { PruebaNgClassComponent } from './components/prueba-ng-class/prueba-ng-c
 import { ResaltadoDirective } from './directives/resaltado.directive';
 import { PruebaDirectivasPersonalizadasComponent } from './components/prueba-directivas-personalizadas/prueba-directivas-personalizadas.component';
 import { PruebaNgSwitchComponent } from './components/prueba-ng-switch/prueba-ng-switch.component';
+import { HomeComponent } from './components/home/home.component';
+import { appRouting } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { PruebaNgSwitchComponent } from './components/prueba-ng-switch/prueba-ng
     PruebaNgClassComponent,
     ResaltadoDirective,
     PruebaDirectivasPersonalizadasComponent,
-    PruebaNgSwitchComponent
+    PruebaNgSwitchComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    appRouting
   ],
   providers: [],
   bootstrap: [AppComponent]

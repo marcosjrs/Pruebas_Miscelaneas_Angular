@@ -15,6 +15,7 @@ import { EditarUsuarioComponent } from './components/pruebas-router/editar-usuar
 import { DetalleUsuarioComponent } from './components/pruebas-router/detalle-usuario.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UsuarioComponent } from './components/pruebas-router/usuario.component';
+import { PruebaCicloVidaComponent } from './components/pruebas-ciclo-vida/prueba-ciclo-vida/prueba-ciclo-vida.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { UsuarioComponent } from './components/pruebas-router/usuario.component'
     EditarUsuarioComponent,
     DetalleUsuarioComponent,
     NavbarComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    PruebaCicloVidaComponent
   ],
   imports: [
     BrowserModule,

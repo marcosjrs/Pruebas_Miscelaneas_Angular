@@ -4,6 +4,7 @@ import { UsuarioComponent } from './components/pruebas-router/usuario.component'
 import { NuevoUsuarioComponent } from './components/pruebas-router/nuevo-usuario.component';
 import { EditarUsuarioComponent } from './components/pruebas-router/editar-usuario.component';
 import { DetalleUsuarioComponent } from './components/pruebas-router/detalle-usuario.component';
+import { PruebaCicloVidaComponent } from './components/pruebas-ciclo-vida/prueba-ciclo-vida/prueba-ciclo-vida.component';
 
 const routes: Routes = [
     { path: 'home', component: ContainerPruebasDirectivasComponent },
@@ -19,6 +20,8 @@ const routes: Routes = [
             { path: '**', redirectTo: 'nuevo' }
         ]
     },
+
+    { path: 'ciclovida', component: PruebaCicloVidaComponent },
 
     { path: '**', redirectTo: 'home' }
 ];

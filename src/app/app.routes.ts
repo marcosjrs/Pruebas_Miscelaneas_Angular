@@ -9,7 +9,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
 
     {
-        path: 'usuario',
+        path: 'usuario/:idUsuario',
         component: UsuarioComponent,
         children: [
             //Se podría llevar este array (const rutasUsuario:Routes = ....) a otro archivo dentro de carpeta "usuario", por ejemplo, importarlo y add aquí.

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-editar-usuario',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarUsuarioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:ActivatedRoute) {
+    //Así recogería un componente que está en una subruta, el parametro de la ruta de un padre
+    router.parent.params.subscribe( params=>console.log( params["idUsuario"]) )
+  }
 
   ngOnInit() {
   }

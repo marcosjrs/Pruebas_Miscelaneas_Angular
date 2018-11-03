@@ -16,6 +16,7 @@ import { DetalleUsuarioComponent } from './components/pruebas-router/detalle-usu
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UsuarioComponent } from './components/pruebas-router/usuario.component';
 import { PruebaCicloVidaComponent } from './components/pruebas-ciclo-vida/prueba-ciclo-vida/prueba-ciclo-vida.component';
+import { PruebaNgIfThenElseComponent } from './components/pruebas-directivas/prueba-ng-if-then-else.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PruebaCicloVidaComponent } from './components/pruebas-ciclo-vida/prueba
     DetalleUsuarioComponent,
     NavbarComponent,
     UsuarioComponent,
-    PruebaCicloVidaComponent
+    PruebaCicloVidaComponent,
+    PruebaNgIfThenElseComponent
   ],
   imports: [
     BrowserModule,

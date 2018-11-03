@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-body">
+
+    <h5 class="card-title">ngIf then - else</h5>
+
+    <p class="card-text">
+      <code> &#60;div *ngIf="show; then bloqueDelThen; else bloqueDelElse">Este contenido será sobreescrito por los ng-template &#60;/div>
+      </code><br>
+      Si show es igual a true, hay dos posibilidades a mostrar. (Esto se hace ayudado por codigo, para intercambiar el valor de bloqueDelThen por uno de los dos (#bloque1DelThen o #bloque2DelThen) .)
+      Si show es false solo se mostrará el del else, #bloqueDelElse.
+    </p>
+
+
+    <div class="card-text">
+      <div *ngIf="show; then bloqueDelThen; else bloqueDelElse">Este contenido será sobreescrito por los ng-template</div>
+      <ng-template #bloque1DelThen> <div class="alert alert-secondary" >Este es #bloque1DelThen, uno de los posible bloques del "then" (en caso de que "show" sea true)</div></ng-template>
+      <ng-template #bloque2DelThen> <div class="alert alert-secondary" >Este es #bloque2DelThen, otro de los posible bloques del "then"(en caso de que "show" sea true)</div></ng-template>
+      <ng-template #bloqueDelElse> <div class="alert alert-secondary" >Este es el bloque del else (en caso de que "show" sea false)</div></ng-template>
+    </div>
+
+    <div class="mt-3">
+      <button (click)="show = !show" class="btn btn-outline-primary btn-sm mr-2">{{show ? 'Cambiar show a false' : 'Cambiar show a true'}}</button>
+      <button (click)="switchPrimary()"class="btn btn-outline-primary">Intercambiar bloques posibles del "then"(es decir caso de que "show" sea true) </button>
+      <div>Valor de show: {{show}}</div>
+    </div>
+  </div>
+</div>

@@ -19,6 +19,7 @@ import { PruebaCicloVidaComponent } from './components/pruebas-ciclo-vida/prueba
 import { PruebaNgIfThenElseComponent } from './components/pruebas-directivas/prueba-ng-if-then-else.component';
 import { ValidacionBasicaPorTemplateComponent } from './components/pruebas-formularios/validacion-basica-por-template/validacion-basica-por-template.component';
 import { ContainerPruebasFormulariosComponent } from './components/pruebas-formularios/container-pruebas-formularios.component';
+import { ValidacionBasicaPorCodigoComponent } from './components/pruebas-formularios/validacion-basica-por-codigo/validacion-basica-por-codigo.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ContainerPruebasFormulariosComponent } from './components/pruebas-formu
     PruebaCicloVidaComponent,
     PruebaNgIfThenElseComponent,
     ValidacionBasicaPorTemplateComponent,
-    ContainerPruebasFormulariosComponent
+    ContainerPruebasFormulariosComponent,
+    ValidacionBasicaPorCodigoComponent
   ],
   imports: [
     BrowserModule,

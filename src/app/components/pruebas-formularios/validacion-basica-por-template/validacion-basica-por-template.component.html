@@ -2,8 +2,8 @@
   <div class="form-group row">
     <label for="inputNombre" class="col-sm-2 col-form-label">Nombre</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" [(ngModel)]="usuario.nombre" name="nombre" 
-          #nombre="ngModel" placeholder="Nombre" required>
+      <input type="text" class="form-control" [(ngModel)]="usuario.nombre" name="nombre"
+         #nombre="ngModel" [ngClass]="{'is-invalid': nombre.errors}" placeholder="Nombre" required>
       <div *ngIf="nombre.errors?.required" class="text-danger mt-2" role="alert">
         El nombre es obligatorio
       </div>
@@ -13,8 +13,8 @@
     <label for="inputApellidos" class="col-sm-2 col-form-label">Apellidos</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" [(ngModel)]="usuario.apellidos" name="apellidos"
-            #apellidos="ngModel" placeholder="Apellidos" minlength="2">
-      <div *ngIf="apellidos.errors?.minlength" class="text-danger mt-2" role="alert">
+            #apellidos="ngModel" [ngClass]="{'is-invalid': apellidos.errors}"  placeholder="Apellidos" minlength="2">
+      <div *ngIf="apellidos.errors?.minlength" class="text-danger mt-2 is-invalid" role="alert">
         El apellido debe tener al menos {{apellidos.errors.minlength.requiredLength}} caracteres
       </div>
     </div>
@@ -23,8 +23,8 @@
     <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
       <input type="email" class="form-control" [(ngModel)]="usuario.email" name="email" 
-          #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" placeholder="Email" required>
-          <div *ngIf="email.errors?.required" class="text-danger mt-2" role="alert">
+          #email="ngModel" [ngClass]="{'is-invalid': email.errors}"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" placeholder="Email" required>
+          <div *ngIf="email.errors?.required" class="text-danger mt-2 is-invalid" role="alert">
             El email es obligatorio
           </div>
           <div *ngIf="email.errors?.pattern" class="text-danger mt-2" role="alert">
@@ -38,3 +38,4 @@
     </div>
   </div>
 </form>
+

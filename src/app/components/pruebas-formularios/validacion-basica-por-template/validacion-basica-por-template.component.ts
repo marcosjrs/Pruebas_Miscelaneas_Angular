@@ -10,7 +10,8 @@ export class ValidacionBasicaPorTemplateComponent implements OnInit {
     nombre:"marcos j",
     apellidos:"rs",
     email:"marcosjrs80@gmail.com",
-    pais:""
+    pais:"",
+    sexo:"Sin definir"
   }
   paises = [
     {nombre:"España", codigo:"1"},

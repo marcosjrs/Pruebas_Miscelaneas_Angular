@@ -47,6 +47,24 @@
     </div>
   </div>
   <div class="form-group row">
+    <label for="sexo" class="col-sm-2 col-form-label">Sexo</label>
+    <div class="col-sm-10 align-middle" style="line-height: 38px;">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" [(ngModel)]="usuario.sexo" type="radio"  name="sexo" value="mujer">
+          <label class="form-check-label" for="mujer">Mujer</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" [(ngModel)]="usuario.sexo" type="radio"  name="sexo" value="hombre">
+          <label class="form-check-label" for="hombre">Hombre</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" [(ngModel)]="usuario.sexo" type="radio"  name="sexo" value="Sin definir">
+          <label class="form-check-label" for="Sin definir">Sin definir</label>
+        </div>
+        <div>Seleccionado: {{usuario.sexo}}</div> 
+    </div>
+  </div> 
+  <div class="form-group row">
     <div class="offset-sm-2 col-sm-10">
       <button type="submit" [disabled]="!formulario.valid" class="btn btn-primary">Guardar</button>
     </div>

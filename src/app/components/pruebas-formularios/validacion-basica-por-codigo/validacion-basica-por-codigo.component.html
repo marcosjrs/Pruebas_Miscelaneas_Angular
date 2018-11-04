@@ -6,22 +6,24 @@
   Se puede hacer: formulario.get('email').errors o formulario.controls.email.errors.
 -->
 <form [formGroup]="formulario" (ngSubmit)="guardar()" novalidate>
-    <div class="form-group row">
-      <label for="inputNombre" class="col-sm-2 col-form-label">Nombre*</label>
-      <div class="col-sm-10">
-        <input formControlName="nombre" type="text" class="form-control" name="nombre"placeholder="Nombre" required>
-        <div *ngIf="formulario.get('nombre').errors?.required" class="text-danger mt-2" role="alert">
-            El nombre es obligatorio
-          </div>
+    <div formGroupName="nombreCompleto">
+      <div class="form-group row">
+        <label for="inputNombre" class="col-sm-2 col-form-label">Nombre*</label>
+        <div class="col-sm-10">
+          <input formControlName="nombre" type="text" class="form-control" name="nombre"placeholder="Nombre" required>
+          <div *ngIf="formulario.get('nombreCompleto.nombre').errors?.required" class="text-danger mt-2" role="alert">
+              El nombre es obligatorio
+            </div>
+        </div>
       </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputApellidos" class="col-sm-2 col-form-label">Apellidos</label>
-      <div class="col-sm-10">
-        <input formControlName="apellidos" type="text" class="form-control" name="apellidos" placeholder="Apellidos" minlength="2">        
-        <div *ngIf="formulario.get('apellidos').errors?.minlength" class="text-danger mt-2 is-invalid" role="alert">
-            El apellido debe tener al menos {{formulario.get('apellidos').errors.minlength.requiredLength}} caracteres
-          </div>
+      <div class="form-group row">
+        <label for="inputApellidos" class="col-sm-2 col-form-label">Apellidos</label>
+        <div class="col-sm-10">
+          <input formControlName="apellidos" type="text" class="form-control" name="apellidos" placeholder="Apellidos" minlength="2">        
+          <div *ngIf="formulario.get('nombreCompleto.apellidos').errors?.minlength" class="text-danger mt-2 is-invalid" role="alert">
+              El apellido debe tener al menos {{formulario.get('nombreCompleto.apellidos').errors.minlength.requiredLength}} caracteres
+            </div>
+        </div>
       </div>
     </div>
     <div class="form-group row">

@@ -11,7 +11,8 @@ export class ValidacionBasicaPorTemplateComponent implements OnInit {
     apellidos:"rs",
     email:"marcosjrs80@gmail.com",
     pais:"",
-    sexo:"Sin definir"
+    sexo:"Sin definir",
+    aceptaCondiciones: false
   }
   paises = [
     {nombre:"España", codigo:"1"},

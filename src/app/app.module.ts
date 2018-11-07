@@ -23,6 +23,7 @@ import { ValidacionBasicaPorCodigoComponent } from './components/pruebas-formula
 import { ComponentePadreComponent } from './components/pruebas-pasando-datos/componente-padre.component';
 import { ComponenteHijoComponent } from './components/pruebas-pasando-datos/componente-hijo.component';
 import { ContainerPruebasPasandoDatosComponent } from './components/pruebas-pasando-datos/container-pruebas-pasando-datos.component';
+import { ContainerPruebasRxjsComponent } from './components/pruebas-rxjs/container-pruebas-rxjs.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ContainerPruebasPasandoDatosComponent } from './components/pruebas-pasa
     ValidacionBasicaPorCodigoComponent,
     ComponentePadreComponent,
     ComponenteHijoComponent,
-    ContainerPruebasPasandoDatosComponent
+    ContainerPruebasPasandoDatosComponent,
+    ContainerPruebasRxjsComponent
   ],
   imports: [
     BrowserModule,

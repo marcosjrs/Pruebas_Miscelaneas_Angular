@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#"><img alt="Home" height="40" src="assets/images/logo.svg" title="Home" width="37" class="ng-star-inserted"></a>
+  <div class="info">Pruebas de: </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,19 +8,22 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a routerLink="home" routerLinkActive="active" >Pruebas de Directivas</a>
+        <a routerLink="home" routerLinkActive="active" >Directivas</a>
       </li> 
       <li class="nav-item">
-        <a [routerLink]="['usuario',1]" routerLinkActive="active">Pruebas de Router</a>
+        <a [routerLink]="['usuario',1]" routerLinkActive="active">Router</a>
       </li>
       <li class="nav-item">
-        <a routerLink="ciclovida" routerLinkActive="active">Pruebas de Ciclo de Vida</a>
+        <a routerLink="ciclovida" routerLinkActive="active">Ciclo de Vida</a>
       </li>
       <li class="nav-item">
-        <a routerLink="formularios" routerLinkActive="active">Pruebas de Formularios</a>
+        <a routerLink="formularios" routerLinkActive="active">Formularios</a>
       </li>
       <li class="nav-item">
-        <a routerLink="pasandodatos" routerLinkActive="active">Pruebas de Pasando Datos</a>
+        <a routerLink="pasandodatos" routerLinkActive="active">Pasando Datos</a>
+      </li>
+      <li class="nav-item sinseparador">
+        <a routerLink="rxjs" routerLinkActive="active">Rxjs</a>
       </li>
     </ul>
   </div>

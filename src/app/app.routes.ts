@@ -7,6 +7,7 @@ import { DetalleUsuarioComponent } from './components/pruebas-router/detalle-usu
 import { PruebaCicloVidaComponent } from './components/pruebas-ciclo-vida/prueba-ciclo-vida/prueba-ciclo-vida.component';
 import { ContainerPruebasFormulariosComponent } from './components/pruebas-formularios/container-pruebas-formularios.component';
 import { ContainerPruebasPasandoDatosComponent } from './components/pruebas-pasando-datos/container-pruebas-pasando-datos.component';
+import { ContainerPruebasRxjsComponent } from './components/pruebas-rxjs/container-pruebas-rxjs.component';
 
 const routes: Routes = [
     { path: 'home', component: ContainerPruebasDirectivasComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
     { path: 'ciclovida', component: PruebaCicloVidaComponent },
     { path: 'formularios', component: ContainerPruebasFormulariosComponent },
     { path: 'pasandodatos', component: ContainerPruebasPasandoDatosComponent },
+    { path: 'rxjs', component: ContainerPruebasRxjsComponent },
 
     { path: '**', redirectTo: 'home' }
 ];

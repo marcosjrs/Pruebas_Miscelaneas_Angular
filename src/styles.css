@@ -1,7 +1,12 @@
 .card{
     margin-top: 15px;
 }
+.navbar .info{
+    color:white;
+    font-weight: bold;
+    margin-right: 20px;
+}
 
-li:not(:last-child)::after{
+li:not(.sinseparador)::after{
     content: " |";
 }

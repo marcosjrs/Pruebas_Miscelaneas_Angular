@@ -1,0 +1,6 @@
+<div style="border:1px solid grey;padding:5px;">
+  <h3> Componente Padre</h3>
+  <hr>
+  Texto recogido del evento "funcion" del hijo:  <b>{{textoDeEventoDeHijo || "Todavía no se pulsó botón del hijo, pulsalo"}}</b>
+  <app-componente-hijo (funcion)="funcionPadre($event)" valor="valor pasado desde padre"></app-componente-hijo>
+</div>

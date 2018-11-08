@@ -10,3 +10,43 @@
 .navbar li:not(.sinseparador)::after{
     content: " |";
 }
+
+/*Estilos para  pruebas-changeDetections*/
+
+.recuadrado{
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+.recuadrado.heroe{
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.hijo{
+    margin: 10px 10px;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+.nieto{
+    margin: 10px 15px;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+.bisnieto{
+    margin: 10px 20px;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+.nieto .titulo, .hijo .titulo{
+    margin: 3px 0;
+}
+

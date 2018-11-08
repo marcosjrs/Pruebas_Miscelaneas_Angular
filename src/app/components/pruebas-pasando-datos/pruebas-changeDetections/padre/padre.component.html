@@ -1,0 +1,26 @@
+<h3>ChangeDetectorRef y changeDetection</h3><hr>
+<div class="recuadrado">
+  <h4>Ejemplo de detach() reattach() de ChangeDetectorRef</h4><hr>
+  <div>Este input se desvincula al hacerle focus y se vincula al quitarle el foco(blur).</div>
+  <div>Intoduce un valor y pulsa fuera.</div>
+  <div>Texto introducido: {{texto}}</div>
+  <input [(ngModel)]="texto" (focus)="deatached()" (blur)="attach()">
+</div>
+
+<div class="recuadrado">
+  <h4>Ejemplo de como changeDetection</h4>
+  <div>changeDetection:ChangeDetectionStrategy.OnPush en el decorador de los componentes hijos influye a la hora de actualizar los cambios en los hijos, los hijos no se enteran hasta que se ejecute algo sobre ellos ¿?<br> (Ver ciclos de vida por consola, según ese valor esta comentado o no)</div><hr> 
+  <div>Pulsa en cambiar valor del padre y mira como NO cambia en el valor del hijo, hasta que se pulse en el botón del hijo (o nietos o bisnietos)</div><hr>
+  <div class="titulo">Padre</div>
+
+  <div class="recuadrado">
+    <div *ngFor="let heroe of heroes" class="recuadrado heroe">
+      <div><b>Nombre de heroe:</b> {{ heroe.nombre }}</div>
+      <div><b>¿Seleccionado?</b> <span>{{ heroe.seleccionado }}</span></div>
+      <button (click)="cambiarValor({'heroe':heroe, 'seleccionado':!heroe.seleccionado})">Cambiar Valor</button>
+    </div>
+  </div>
+
+  <app-child *ngFor="let heroe of heroes" [valorRecibido]="heroe" (cambioValor)="cambiarValor($event)"></app-child>
+
+</div>

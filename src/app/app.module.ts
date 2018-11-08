@@ -26,6 +26,10 @@ import { ComponenteHijoComponent } from './components/pruebas-pasando-datos/comp
 import { ContainerPruebasPasandoDatosComponent } from './components/pruebas-pasando-datos/container-pruebas-pasando-datos.component';
 import { ContainerPruebasRxjsComponent } from './components/pruebas-rxjs/container-pruebas-rxjs.component';
 import { InterconectandoDatosServiciosComponent } from './components/pruebas-pasando-datos/interconectando-datos-servicios.component';
+import { BisnietoComponent } from './components/pruebas-pasando-datos/pruebas-changeDetections/bisnieto/bisnieto.component';
+import { PadreComponent } from './components/pruebas-pasando-datos/pruebas-changeDetections/padre/padre.component';
+import { HijoComponent } from './components/pruebas-pasando-datos/pruebas-changeDetections/hijo/hijo.component';
+import { NietoComponent } from './components/pruebas-pasando-datos/pruebas-changeDetections/nieto/nieto.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,11 @@ import { InterconectandoDatosServiciosComponent } from './components/pruebas-pas
     ComponenteHijoComponent,
     ContainerPruebasPasandoDatosComponent,
     ContainerPruebasRxjsComponent,
-    InterconectandoDatosServiciosComponent
+    InterconectandoDatosServiciosComponent,
+    PadreComponent,
+    HijoComponent,
+    NietoComponent,
+    BisnietoComponent,
   ],
   imports: [
     BrowserModule,

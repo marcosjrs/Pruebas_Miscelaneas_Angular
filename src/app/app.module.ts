@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { ComponentePadreComponent } from './components/pruebas-pasando-datos/com
 import { ComponenteHijoComponent } from './components/pruebas-pasando-datos/componente-hijo.component';
 import { ContainerPruebasPasandoDatosComponent } from './components/pruebas-pasando-datos/container-pruebas-pasando-datos.component';
 import { ContainerPruebasRxjsComponent } from './components/pruebas-rxjs/container-pruebas-rxjs.component';
+import { InterconectandoDatosServiciosComponent } from './components/pruebas-pasando-datos/interconectando-datos-servicios.component';
 
 @NgModule({
   declarations: [
@@ -47,12 +49,14 @@ import { ContainerPruebasRxjsComponent } from './components/pruebas-rxjs/contain
     ComponentePadreComponent,
     ComponenteHijoComponent,
     ContainerPruebasPasandoDatosComponent,
-    ContainerPruebasRxjsComponent
+    ContainerPruebasRxjsComponent,
+    InterconectandoDatosServiciosComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     appRouting
   ],
   providers: [],

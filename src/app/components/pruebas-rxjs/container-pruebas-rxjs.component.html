@@ -1,3 +1,22 @@
-<p>
-  container-pruebas-rxjs works!
-</p>
+<div class="row">
+  <div class="col">
+    <p>Para estas pruebas, mirar consola </p>
+    <p>Un subject (por ej.: subjectString$:Subjectt&#60;string> = new Subject&#60;string>(); ) puede hacer de observador y de observable
+    así que puede emitir, usando .next() o puede escucharse usando .subscribe(), o ambas</p>
+    <button (click)="subjectTexto$.next('Hola que tal');">Emitir texto ( llama a:  subjectTexto$.next(('Hola que tal') )</button>
+    <hr>
+    <div>A estos Subject se les puede "acoplar" un scan, map, ... lo que se necesite..<br>
+      por ejemplo, definiendo:</div> 
+    <p>subjectNumero$ = new Subject&#60;number>().pipe( scan((acc: number, current: number): number => acc + current) );</p>
+    <button (click)="subjectNumero$.next(1);">subjectNumero$.next(1) : Aumentara en uno por el scan</button>
+  </div>
+  <div class="col">
+    <p class="my-3">Peticiones http con share() (dentro de pipe) para que no repita la peticion con cada subscribe
+      (mirar consola)... Recordar que el | async en si mismo hace un subscribe </p>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let repo of repos$ | async | slice:0:5">
+        <div>{{repo.name}}</div>
+      </li>
+    </ul>
+  </div>
+</div>

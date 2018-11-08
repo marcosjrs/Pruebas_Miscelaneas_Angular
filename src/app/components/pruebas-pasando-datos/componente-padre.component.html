@@ -1,6 +1,10 @@
+<h3>@Input / @Output</h3><hr>
 <div style="border:1px solid grey;padding:5px;">
   <h3> Componente Padre</h3>
   <hr>
   Texto recogido del evento "funcion" del hijo:  <b>{{textoDeEventoDeHijo || "Todavía no se pulsó botón del hijo, pulsalo"}}</b>
-  <app-componente-hijo (funcion)="funcionPadre($event)" valor="valor pasado desde padre"></app-componente-hijo>
+  <div class="my-3"> 
+    <p>Este valor (<b>{{valorDePadre}}</b>) se pasa inicialmente al hijo, como una variable, al actualizar la variable en padre, se modifica en hijo, pulsa en:</p> 
+    <button (click)="modificarValorDePadrePasadoAHijo()">Modificar valor pasado desde padre</button></div>
+  <componentente-hijo (funcion)="funcionPadre($event)" valor={{valorDePadre}}></componentente-hijo>
 </div>

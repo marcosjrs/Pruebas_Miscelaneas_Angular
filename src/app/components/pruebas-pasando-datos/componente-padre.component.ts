@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-componente-padre',
+  selector: 'componentente-padre',
   templateUrl: './componente-padre.component.html',
   styles: []
 })
 export class ComponentePadreComponent {
   textoDeEventoDeHijo:string;
+  valorDePadre:string="valor inicial del padre";
 
-  constructor() { }
+  constructor() {}
+
+  modificarValorDePadrePasadoAHijo(){
+    console.log("this.valorDePadre ha sido modificado: "+ this.valorDePadre);
+    this.valorDePadre = "valor modificado del padre";
+  }
 
   funcionPadre(textoDelEventoEmitidoPorHijo){
     this.textoDeEventoDeHijo = textoDelEventoEmitidoPorHijo;

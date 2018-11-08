@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-componente-hijo',
+  selector: 'componentente-hijo',
   templateUrl: './componente-hijo.component.html',
   styles: []
 })

@@ -1,0 +1,10 @@
+<h3>Servicios</h3><hr>
+<h5>Tras hacer:  this.valor = miSvc.valor; </h5>
+<h5>Estamos cambiando un valor en el servicio y lo que pasa es:</h5><hr>
+<div>Valor propiedad del servicio (miSvc.valor): <b>{{miSvc.valor}}</b></div>
+<div>Valor propiedad de Componente (no se entera del cambio): <b>{{valor}}</b></div>
+<div>...</div>
+<div><button (click)="miSvc.valor='Modificado desde consumidor de servicio'">Modificar miSvc.valor</button>&nbsp;
+  <button (click)="valor='Modificado desde consumidor de servicio'">Modificar valor</button> </div><hr>
+<div>Valor apuntando a Observable de la propiedad del servicio: <b>{{miSvc.valorObservable | async}}</b></div>
+<div>Valor Observable vinculando a propiedad de Componente (no se entera del cambio): <b>{{valorObservable |async}}</b></div><hr>
